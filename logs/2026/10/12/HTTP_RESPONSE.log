@@ -1,0 +1,496 @@
+Timestamp: 2026-10-12T22:22:32.949+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 304 Not Modified
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:65244
+Payload size: 149 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:22:33.314+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 304 Not Modified
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:65245
+Payload size: 179 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:22:33.338+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 200 OK
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:65244
+Payload size: 16312 bytes
+Content-Type: text/javascript
+
+Readable payload:
+import "/node_modules/vite/dist/client/env.mjs";
+//#region ../../node_modules/.pnpm/nanoid@5.1.16/node_modules/nanoid/non-secure/index.js
+let urlAlphabet = "useandom-26T198340PX75pxJACKVERYMINDBUSHWOLF_GQZbfghjklqvwyzrict";
+let nanoid = (size = 21) => {
+	let id = "";
+	let i = size | 0;
+	while (i-- > 0) id += urlAlphabet[Math.random() * 64 | 0];
+	return id;
+};
+//#endregion
+//#region src/shared/constants.ts
+/**
+* Prefix for resolved Ids that are not valid browser import specifiers
+*/
+const VALID_ID_PREFIX = `/@id/`;
+/**
+* Plugins that use 'virtual modules' (e.g. for helper functions), prefix the
+* module ID with `\0`, a convention from the rollup ecosystem.
+* This prevents other plugins from trying to process the id (like node resolution),
+* and core features like sourcemaps can use this info to differentiate between
+* virtual modules and regular files.
+* `\0` is not a permitted char in import URLs so we have to replace them during
+* import analysis. The id will be decoded back before entering the plugins pipeline.
+* These encoded virtual ids are also prefixed by the VALID_ID_PREFIX, so virtual
+* modules in the browser end up encoded as `/@id/__x00__{id}`
+*/
+const NULL_BYTE_PLACEHOLDER = `__x00__`;
+let SOURCEMAPPING_URL = "sourceMa";
+SOURCEMAPPING_URL += "ppingURL";
+typeof process !== "undefined" && process.platform;
+/**
+* Prepend `/@id/` and replace null byte so the id is URL-safe.
+* This is prepended to resolved ids that are not valid browser
+* import specifiers by the importAnalysis plugin.
+*/
+function wrapId(id) {
+	return id.startsWith(VALID_ID_PREFIX) ? id : VALID_ID_PREFIX + id.replace("\0", NULL_BYTE_PLACEHOLDER);
+}
+(async function() {}).constructor;
+function promiseWithResolvers() {
+	let resolve;
+	let reject;
+	return {
+		promise: new Promise((_resolve, _reject) => {
+			resolve = _resolve;
+			reject = _reject;
+		}),
+		resolve,
+		reject
+	};
+}
+//#endregion
+//#region src/shared/moduleRunnerTransport.ts
+function reviveInvokeError(e) {
+	const error = new Error(e.mes
+... [truncated]
+======================================================================
+
+Timestamp: 2026-10-12T22:22:33.365+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 304 Not Modified
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:65244
+Payload size: 179 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:22:33.369+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 304 Not Modified
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:65244
+Payload size: 179 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:22:33.370+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 304 Not Modified
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:65244
+Payload size: 179 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:22:33.372+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 304 Not Modified
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:65244
+Payload size: 179 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:22:33.399+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 304 Not Modified
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:65244
+Payload size: 179 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:22:33.400+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 304 Not Modified
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:65245
+Payload size: 179 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:22:33.408+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 101 Switching Protocols
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:65247
+Payload size: 163 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:22:35.910+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 200 OK
+Direction: Backend (5000) -> Client
+Source: 127.0.0.1:5000
+Destination: 127.0.0.1:65248
+Payload size: 233 bytes
+Content-Type: application/json
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:22:35.937+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 200 OK
+Direction: Backend (5000) -> Client
+Source: 127.0.0.1:5000
+Destination: 127.0.0.1:65250
+Payload size: 233 bytes
+Content-Type: application/json
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:22:39.394+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 200 OK
+Direction: Backend (5000) -> Client
+Source: 127.0.0.1:5000
+Destination: 127.0.0.1:65252
+Payload size: 338 bytes
+Content-Type: text/html; charset=utf-8
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:22:39.462+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 200 OK
+Direction: Backend (5000) -> Client
+Source: 127.0.0.1:5000
+Destination: 127.0.0.1:65253
+Payload size: 233 bytes
+Content-Type: application/json
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:22:39.483+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 200 OK
+Direction: Backend (5000) -> Client
+Source: 127.0.0.1:5000
+Destination: 127.0.0.1:65255
+Payload size: 233 bytes
+Content-Type: application/json
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:50:01.046+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 101 Switching Protocols
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:49211
+Payload size: 164 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:50:01.104+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 304 Not Modified
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:49212
+Payload size: 149 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:50:01.211+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 200 OK
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:49212
+Payload size: 16312 bytes
+Content-Type: text/javascript
+
+Readable payload:
+import "/node_modules/vite/dist/client/env.mjs";
+//#region ../../node_modules/.pnpm/nanoid@5.1.16/node_modules/nanoid/non-secure/index.js
+let urlAlphabet = "useandom-26T198340PX75pxJACKVERYMINDBUSHWOLF_GQZbfghjklqvwyzrict";
+let nanoid = (size = 21) => {
+	let id = "";
+	let i = size | 0;
+	while (i-- > 0) id += urlAlphabet[Math.random() * 64 | 0];
+	return id;
+};
+//#endregion
+//#region src/shared/constants.ts
+/**
+* Prefix for resolved Ids that are not valid browser import specifiers
+*/
+const VALID_ID_PREFIX = `/@id/`;
+/**
+* Plugins that use 'virtual modules' (e.g. for helper functions), prefix the
+* module ID with `\0`, a convention from the rollup ecosystem.
+* This prevents other plugins from trying to process the id (like node resolution),
+* and core features like sourcemaps can use this info to differentiate between
+* virtual modules and regular files.
+* `\0` is not a permitted char in import URLs so we have to replace them during
+* import analysis. The id will be decoded back before entering the plugins pipeline.
+* These encoded virtual ids are also prefixed by the VALID_ID_PREFIX, so virtual
+* modules in the browser end up encoded as `/@id/__x00__{id}`
+*/
+const NULL_BYTE_PLACEHOLDER = `__x00__`;
+let SOURCEMAPPING_URL = "sourceMa";
+SOURCEMAPPING_URL += "ppingURL";
+typeof process !== "undefined" && process.platform;
+/**
+* Prepend `/@id/` and replace null byte so the id is URL-safe.
+* This is prepended to resolved ids that are not valid browser
+* import specifiers by the importAnalysis plugin.
+*/
+function wrapId(id) {
+	return id.startsWith(VALID_ID_PREFIX) ? id : VALID_ID_PREFIX + id.replace("\0", NULL_BYTE_PLACEHOLDER);
+}
+(async function() {}).constructor;
+function promiseWithResolvers() {
+	let resolve;
+	let reject;
+	return {
+		promise: new Promise((_resolve, _reject) => {
+			resolve = _resolve;
+			reject = _reject;
+		}),
+		resolve,
+		reject
+	};
+}
+//#endregion
+//#region src/shared/moduleRunnerTransport.ts
+function reviveInvokeError(e) {
+	const error = new Error(e.mes
+... [truncated]
+======================================================================
+
+Timestamp: 2026-10-12T22:50:01.233+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 304 Not Modified
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:49213
+Payload size: 179 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:50:01.233+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 304 Not Modified
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:49214
+Payload size: 179 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:50:01.235+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 304 Not Modified
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:49212
+Payload size: 179 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:50:01.236+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 304 Not Modified
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:49212
+Payload size: 179 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:50:01.239+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 304 Not Modified
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:49212
+Payload size: 179 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:50:01.241+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 304 Not Modified
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:49212
+Payload size: 179 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:50:01.241+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 304 Not Modified
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:49214
+Payload size: 179 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:50:01.242+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 101 Switching Protocols
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:49215
+Payload size: 163 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:50:01.353+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 304 Not Modified
+Direction: Frontend (5173) -> Client
+Source: ::1:5173
+Destination: ::1:49214
+Payload size: 127 bytes
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:50:01.788+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 200 OK
+Direction: Backend (5000) -> Client
+Source: 127.0.0.1:5000
+Destination: 127.0.0.1:49216
+Payload size: 233 bytes
+Content-Type: application/json
+
+Readable payload:
+No response body in this packet.
+======================================================================
+
+Timestamp: 2026-10-12T22:50:01.811+05:30
+Label: capture
+Type: HTTP_RESPONSE
+Event: HTTP response: HTTP/1.1 200 OK
+Direction: Backend (5000) -> Client
+Source: 127.0.0.1:5000
+Destination: 127.0.0.1:49218
+Payload size: 233 bytes
+Content-Type: application/json
+
+Readable payload:
+No response body in this packet.
+======================================================================
+

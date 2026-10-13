@@ -1,0 +1,19 @@
+[project]
+name = "http-logger"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Sorav", email = "soravchoudhary2810@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "scapy>=2.8.0",
+]
+
+[project.scripts]
+http-logger = "http_logger:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
