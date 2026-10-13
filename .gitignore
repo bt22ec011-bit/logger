@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+logs/
+http_logs/
+my_logs/
+*.log
+.env.local
